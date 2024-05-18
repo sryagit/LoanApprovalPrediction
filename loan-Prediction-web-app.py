@@ -58,7 +58,7 @@ def main():
     # creating a button for Prediction
     
     if st.button('Status Test Result'):
-        status = diabetes_prediction([Gender,Married,Dependents,Education,Self_Employed,ApplicantIncome,CoapplicantIncome,LoanAmount,Loan_Amount_Term,Credit_History,Property_Area])
+        status = LoanApprovalPrediction([Gender,Married,Dependents,Education,Self_Employed,ApplicantIncome,CoapplicantIncome,LoanAmount,Loan_Amount_Term,Credit_History,Property_Area])
         
         
     st.success(status)
