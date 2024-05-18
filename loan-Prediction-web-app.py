@@ -10,7 +10,7 @@ loaded_model = pickle.load(open('trained_model.sav', 'rb'))
 
 # creating a function for Prediction
 
-def LoanApprovalPrediction(input_data):
+def Loanapprovalprediction(input_data):
     
 
     # changing the input_data to numpy array
@@ -58,7 +58,7 @@ def main():
     # creating a button for Prediction
     
     if st.button('Status Test Result'):
-        status = LoanApprovalPrediction([Gender,Married,Dependents,Education,Self_Employed,ApplicantIncome,CoapplicantIncome,LoanAmount,Loan_Amount_Term,Credit_History,Property_Area])
+        status = Loanapprovalprediction([Gender,Married,Dependents,Education,Self_Employed,ApplicantIncome,CoapplicantIncome,LoanAmount,Loan_Amount_Term,Credit_History,Property_Area])
         
         
     st.success(status)
